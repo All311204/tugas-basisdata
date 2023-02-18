@@ -1,0 +1,15 @@
+1. SELECT * FROM `tb_obat` WHERE satuan = 'botol';
+2. SELECT * FROM `tb_obat` WHERE jenis = 'obat keras' OR jenis = 'obat terbatas';
+3. SELECT * FROM `tb_obat` WHERE stok < 50;
+4. SELECT * FROM `tb_obat` WHERE satuan !='tablet';
+5. SELECT * FROM `tb_obat` WHERE jenis ='Obat bebas' ORDER BY harga_jual ASC;
+6. SELECT * FROM `tb_obat` WHERE satuan ='Botol' AND harga_beli > '10000' AND harga_beli <'100000';
+7. SELECT * FROM `tb_obat` WHERE jenis ='obat bebas' AND stok >= 5;
+8. SELECT * FROM `tb_obat` WHERE nama_obat LIKE 'B%';
+9. SELECT * FROM `tb_obat` WHERE nama_obat LIKE '%OM%';
+10. 
+11. 
+12. SELECT * FROM `tb_obat` WHERE kode_obat = 'k001' OR kode_obat = 'k003' OR kode_obat = 'k005' OR kode_obat = 'k007';
+13. SELECT nama_obat, stok, harga_beli, harga_beli, (harga_beli * stok) AS total_harga_beli, (harga_jual * stok) AS total_harga_jual, (harga_beli * stok) - (harga_jual * stok) AS laba FROM tb_obat;
+14.
+15.
